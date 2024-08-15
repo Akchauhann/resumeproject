@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="mt-5 text-center">
+
+   <div class="text-center">
+      <img src="{% static 'core/images/pixel.jpg' %}" alt="ProfilePic"class="img-thumbnail" width="250px" height="150px">
+   </div>
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello</h1>
+    <div class="px-4" style="line-height: 2rem;">
+   <p style="text-indent: 100px;"> I am <b
+      class="text-warning" > AKHIL </b>Recent graduate with a strong educational background and a passion for entering the corporate world. Possesses foundational skills in communication, time management, and employee relations. Proficient in Microsoft Office applications, including Word, PowerPoint, Notepad, WordPad, and Excel. A quick learner with a proactive and adaptable approach, eager to contribute positively to a corporate setting. Seeking an entry-level opportunity to apply academic knowledge and cultivate professional skills while making valuable contributions to the team.
+      A hard-working individual with a passion and realistic planning, focused to utilize <b class="text-warning" >analytical and technical skills</b> by continuous learning and improvement, so as to actualize potentiality into reality and achieve organizational goals </p>
+     </div>
+      </div>
+      <div class="text-center" >
+         <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3" style="margin-right: 20px;">Hire Me</a>
+         <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact Me</a>
+      </div>
+    </div>
+
+
+{% endblock content %}
